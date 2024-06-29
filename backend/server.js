@@ -32,12 +32,6 @@ const adminRoutes = require('./routes/adminRoutes');
 const predicateurRoutes = require('./routes/predicateurRoutes');
 const sermonRoutes = require('./routes/sermonRoutes');
 
-// // Endpoint de test
-// app.post('/test', (req, res) => {
-//   console.log("Requête reçue avec les données :", req.body);
-//   res.json({ message: 'Données reçues', data: req.body });
-// });
-
 app.use('/api/admins', adminRoutes);
 app.use('/api/predicateurs', predicateurRoutes);
 app.use('/api/sermons', sermonRoutes);
